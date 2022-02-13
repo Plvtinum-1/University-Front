@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1200px;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+}
+
+.image-container {
+  width: 400px;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
