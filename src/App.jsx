@@ -44,7 +44,7 @@ function Homepage() {
 
 function MathCourse({ active, setActive }) {
 
-  const [videoId, setVideoId] = useState('t5pQSNVQIeo');
+  const [videoId, setVideoId] = useState('AiCUbwzjzKA');
   const [loading, setLoading] = useState(true);
   
   return (
@@ -108,7 +108,7 @@ function MathCourse({ active, setActive }) {
 
 function ProgrammingCourse({ active, setActive }) {
 
-  const [videoId, setVideoId] = useState('t5pQSNVQIeo');
+  const [videoId, setVideoId] = useState('AiCUbwzjzKA');
   const [loading, setLoading] = useState(true);
 
   return (
