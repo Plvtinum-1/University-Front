@@ -1,0 +1,85 @@
+/* .spinner {
+  width: 150px;
+  height: 150px;
+  background-color: #f1f1f9;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 5px solid black;
+  border-bottom-color: transparent;
+  position: relative;
+  animation: spinner 1s linear infinite paused;
+  -webkit-animation: spinner 1s linear infinite;
+
+  
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(1turn);
+    -webkit-transform: rotate(1turn);
+    -moz-transform: rotate(1turn);
+    -ms-transform: rotate(1turn);
+    -o-transform: rotate(1turn);
+  }
+} */
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 5px solid #dc1955;
+  border-right-color: transparent;
+  position: relative;
+  animation-name: spinner;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.spinner::after,
+.spinner::before {
+  content: "";
+  background-color: transparent;
+  position: absolute;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  z-index: -1;
+}
+.spinner::after {
+  width: 54px;
+  height: 54px;
+  border: 5px solid #1490e3;
+  border-left-color: transparent;
+  left: -12px;
+  top: -12px;
+}
+.spinner::before {
+  width: 68px;
+  height: 68px;
+  border: 5px solid #fca800;
+  border-bottom-color: transparent;
+  left: -19px;
+  top: -19px;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(1turn);
+    -webkit-transform: rotate(1turn);
+    -moz-transform: rotate(1turn);
+    -ms-transform: rotate(1turn);
+    -o-transform: rotate(1turn);
+  }
+}
+.spinner:hover {
+  animation-play-state: paused;
+}
