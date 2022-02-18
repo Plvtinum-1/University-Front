@@ -69,7 +69,7 @@ function MathCourse({ active, setActive }) {
             <h3 className='title'>Comments</h3>
             { mathComments.map(item => (
               <div className='comment'>
-                <img className='user' src={user} alt="img" />
+                <img className='user' src={user} alt="" />
                 <div className='message-container'>
                     <p className='message-title'>{item.title}</p>
                     <p className='message'>{item.message}</p>
@@ -94,7 +94,7 @@ function MathCourse({ active, setActive }) {
               >
                 <span className='intro'>{item.title}</span>
                 <div className='time'>
-                  <img className='circled' src={playDark} />
+                  <img className='circled' src={playDark} alt='' />
                   <span>{item.time}</span>
                 </div>
               </div>
@@ -133,7 +133,7 @@ function ProgrammingCourse({ active, setActive }) {
             <h3 className='title'>Comments</h3>
             { mathComments.map(item => (
               <div className='comment'>
-                <img className='user' src={user} alt="img" />
+                <img className='user' src={user} alt="" />
                 <div className='message-container'>
                     <p className='message-title'>{item.title}</p>
                     <p className='message'>{item.message}</p>
@@ -158,7 +158,7 @@ function ProgrammingCourse({ active, setActive }) {
               >
                 <span className='intro'>{item.title}</span>
                 <div className='time'>
-                  <img className='circled' src={playDark} />
+                  <img className='circled' src={playDark} alt='' />
                   <span>{item.time}</span>
                 </div>
               </div>
